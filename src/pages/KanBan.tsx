@@ -2,12 +2,12 @@ import { Plus, MoreVertical } from "lucide-react";
 
 export default function KanbanPage() {
   return (
-    <div className="p-6">
+    <div className="p-6 bg-[#1A1A1A] rounded-xl">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Kanban Board</h1>
+        <h1 className="text-lg font-semibold">Kanban Board</h1>
 
-        <button className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
+        <button className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-xl hover:bg-orange-600">
           <Plus size={18} />
           Add Task
         </button>
@@ -17,7 +17,7 @@ export default function KanbanPage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Column 1 - TODO */}
-        <div className="bg-[#1A1A1A] p-4 rounded-xl">
+        <div className="bg-[#333333] p-4 rounded-xl">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-lg">To Do</h2>
             <span className="text-sm bg-[#3f3f3f]  px-2 py-1 rounded-lg">3</span>
@@ -46,7 +46,7 @@ export default function KanbanPage() {
         </div>
 
         {/* Column 2 - IN PROGRESS */}
-        <div className="bg-[#1A1A1A] p-4 rounded-xl">
+        <div className="bg-[#333333] p-4 rounded-xl">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-lg">In Progress</h2>
             <span className="text-sm bg-[#3f3f3f] px-2 py-1 rounded-lg">2</span>
@@ -69,7 +69,7 @@ export default function KanbanPage() {
         </div>
 
         {/* Column 3 - COMPLETED */}
-        <div className="bg-[#1A1A1A] p-4 rounded-xl">
+        <div className="bg-[#333333] p-4 rounded-xl">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-lg">Completed</h2>
             <span className="text-sm bg-[#3f3f3f] px-2 py-1 rounded-lg">5</span>

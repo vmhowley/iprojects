@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Briefcase,
   ListChecks,
@@ -15,7 +16,6 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import KanbanPage from "./KanBan";
 
 ChartJS.register(
   CategoryScale,
@@ -87,7 +87,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-    {/* Kanban */}
+    
       {/* --- Gráfica --- */}
       <div className="bg-[#1A1A1A] p-6 rounded-xl">
         <h3 className="text-lg font-semibold text-white mb-4">Weekly time log</h3>

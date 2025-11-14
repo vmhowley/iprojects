@@ -8,7 +8,8 @@ export const AppRouter = () => {
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<Dashboard/>} />
-        <Route path="/project" element={<KanbanPage/>} />
+        <Route path="/board" element={<KanbanPage/>} />
+        <Route path='*' element={<div className="fixed z-50 inset-0 justify-center items-center flex bg-black">404 + Not Found</div>}/>
       </Route>
     </Routes>
   );

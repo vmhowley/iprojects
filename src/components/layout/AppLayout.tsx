@@ -4,7 +4,7 @@ import { Outlet, useLocation } from "react-router-dom";
 const pageTitles = {
 "/": "Dashboard",
 "/dashboard": "Dashboard",
-"/projects": "Projects",
+"/project": "Projects",
 "/tasks": "Tasks",
 "/time-log": "Time log",
 "/resources": "Resource management",
@@ -14,7 +14,7 @@ const pageTitles = {
 };
 export const AppLayout = () => {
   const { pathname } = useLocation();
-  const title = pageTitles[pathname] || "Dashboard";
+  const title = pageTitles[pathname] ;
 
   return (
     <div className="flex h-screen w-full overflow-hidden bg-[#0E0E0E]"> 
